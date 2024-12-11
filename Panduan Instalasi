@@ -1,0 +1,35 @@
+# MobileNet Cactus Classifier
+
+Proyek ini menggunakan MobileNet untuk mengklasifikasikan jenis kaktus. Berikut adalah panduan untuk menjalankan proyek ini.
+
+## Persyaratan
+- Python 3.8+
+- TensorFlow 2.0+
+- Android Studio
+
+## Instalasi
+
+### 1. Pelatihan Model
+1. Clone repository ini:
+   ```bash
+   git clone https://github.com/username/mobilenet-cactus-classifier.git
+   cd mobilenet-cactus-classifier
+2. Buka training_notebook.ipynb di Google Colab.
+3. Jalankan semua cell untuk melatih model.
+
+
+
+
+# Menggunakan Model di Android
+1. Export model ke format .tflite (terlampir di notebook).
+   
+2. Masukkan file .tflite ke folder assets di proyek Android Studio.
+   
+3. Pastikan file build.gradle sudah memiliki dependensi berikut:
+gradle
+   -implementation 'org.tensorflow:tensorflow-lite:2.9.0'
+   -implementation 'org.tensorflow:tensorflow-lite-support:0.4.0'
+   
+4. Jalankan aplikasi menggunakan Android Studio.
+note:
+     - Data yang digunakan di android studio sebaiknya di extract terlebih dahulu.
